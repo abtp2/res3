@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+				<meta charset="UTF-8">
+				<meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no"/>
+				<title>Ashutosh Pandey</title>
+</head>
+<body>
+
+<div id="nav">
+<a href="#home">
+<img src="home.png" id="first" onclick="one()"></a><br>
+<a href="#about">
+<img src="about.png" id="second" onclick="two()"></a><br>
+<a href="#contact"> 
+<img src="contact-mail.png" id="third" onclick="third()"></a><br>
+<a href="https://abtp2.github.io/res6">
+<img src="coding.png" id="four"></a>
+</div>
+
+
+
+
+<section id="home">
+<div id="row">
+         <div id="col1">
+        	<img src="about2.jpg">
+          </div>		
+          <div id="col2">
+<h1>Hello, I am Ashutosh Pandey</h1>
+<h3>This is my personal portfolio.<br>I am a student  of class 10th.<br>I am a founder of GetWeb.<br>I have also founded a CSS library called GetWeb.css. <br></h3>
+<a href="#about">Learn More</a>
+          </div>
+</div>
+</section>
+
+
+
+<section id="about">
+	<div id="row2">
+	       	<div id="col3">
+    		  <h1 align="center">My Skills <hr style="width:100%;background: #fff;height:4px;border-radius: 20px;"></h1>
+      	</div>
+        	<div id="col4">      	
+      	<label for="file">HTML</label><br>
+   <div id="file" style="width:95%;">97%</div>
+   <br>
+   <label for="file">CSS</label><br>
+      <div id="file" style="width:80%;">80%</div>
+   <br>
+   	<label for="file">JavaScript</label><br>
+      <div id="file" style="width:76%;">76%</div>
+   <br>
+   	<label for="file">Python</label><br>
+   <div id="file" style="width:60%;">60%</div>
+   <br>
+   	<label for="file">GetWeb.css</label><br>
+   <div id="file" style="width:98%;">100%</div>      			
+      	</div>  	
+</div>	
+</section>
+
+
+
+
+<section id="contact">
+	
+  <div id="row3">
+  	 <h1 align="center">Contact me<hr style="width:100%;background: #fff;height:4px;border-radius: 20px;"></h1>
+  	<input type="email" placeholder="Your email...." id="main"><br>
+  	<input type="text" placeholder="How did you know about me ?" id="main"><br>
+  	<textarea placeholder="Your message here..."></textarea><br>
+  	<input type="submit" id="submit">
+  </div>
+</section>
+
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+body{
+margin:0;
+padding:0;
+overflow:hidden;
+user-select:none; 
+background:linear-gradient(45deg, #51ff2b ,#3c2bff);
+background-size:100vw 300vh;
+background-repeat:no-repeat;
+animation:spin 2s ease-in-out infinite;
+}
+
+@keyframes spin{
+0%{
+background:linear-gradient(45deg, #51ff2b ,#3c2bff);
+background-size:100vw 300vh;
+background-repeat:no-repeat;
+}				
+25%{
+background:linear-gradient(90deg, #51ff2b ,#3c2bff);
+background-size:100vw 300vh;
+background-repeat:no-repeat;
+}
+50{
+background:linear-gradient(135deg, #51ff2b ,#3c2bff);
+background-size:100vw 300vh;
+background-repeat:no-repeat;
+}
+75%{
+background:linear-gradient(180deg, #51ff2b ,#3c2bff);	
+background-size:100vw 300vh;
+background-repeat:no-repeat;
+}
+100%{
+background:linear-gradient(225deg, #51ff2b ,#3c2bff);
+background-size:100vw 300vh;
+background-repeat:no-repeat;
+}
+}
+
+#nav{
+width:40px;
+background: #000144;
+display: flex;
+flex-direction:column; 
+align-items:center; 
+justify-content:center;
+padding:12px;
+position:fixed;
+top:50%;
+transform:translateY(-50%);
+border-top-right-radius:20px;
+border-bottom-right-radius:20px;
+}		
+
+#nav img{
+width:90%;
+border-radius:100%;
+padding:3px;
+}
+
+#first{
+background:#fff;
+box-shadow:inset 0px 7px 13px #51ff2b;
+}
+
+#second{
+background:#fff;
+}
+
+#third{
+background:#fff;
+}
+
+#four{
+background:#fff;
+}
+
+#home{
+height:100vh;			
+display:flex;
+flex-direction:column;
+align-items:center;
+color:#fff;
+-webkit-text-stroke:1px #000144;
+justify-content:center;
+}
+
+#about{
+height:100vh;			
+display:flex;
+flex-direction:column;
+align-items:center;
+color:#fff;
+justify-content:center;
+}
+
+
+#row{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:75%;
+position: absolute;
+right:5px;
+border-radius:20px;
+box-shadow:inset 0px 0px 15px #fff;
+padding:10px 10px;
+border:2px solid  #fff;
+}
+
+
+
+@media(min-width:900px){
+#row{
+flex-direction:row;				
+padding:60px 10px;
+right:30px;
+box-shadow:inset 0px 0px 40px #fff;
+border:5px solid  #fff;
+}
+}
+
+#col1 img{
+width:170px;
+height:170px;
+border-radius:100%;
+border:5px solid #fff;
+margin-top:1rem;
+}
+
+#col2 h1{
+width:100%;
+text-align:center;
+-webkit-text-stroke:1px #000144;
+}
+#col2 h3{
+padding:0px 15px;
+-webkit-text-stroke:0.5px #000144;
+}
+@media(min-width:900px){
+#col2 h3{
+padding-left:100px;
+line-height:30px;
+}
+#col1 img{
+width:220px;
+height:220px;
+border-radius:100%;
+border:5px solid #fff;
+margin-top:1rem;
+margin-left:1rem;
+}
+#home{
+-webkit-text-stroke:0px #000144;
+}
+}
+#col2 a{
+text-decoration:none;
+background:#51ff2b;
+color:#000144;
+padding:7px 10px;
+border-radius:10px;
+margin:0 auto;
+display:block;
+text-align:center;
+width:90px;
+-webkit-text-stroke:1px transparent;
+margin-bottom:1rem;
+}
+
+
+#file{
+background:#000144;
+height:5px;
+border-radius:100px;
+border:2px solid #fff;
+display:flex;
+align-items:center; 
+padding:7px;
+font-size:11px;
+font-weight:600;
+color:#fff;
+}
+label{
+font-weight:500;
+}
+
+#col4{
+width:90%;
+margin-bottom:1.5rem;
+margin-top:1rem;
+}
+
+#row2{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:75%;
+position: absolute;
+right:5px;
+border-radius:20px;
+box-shadow:inset 0px 0px 15px #fff;
+padding:10px 10px;
+border:2px solid  #fff;
+}
+@media(min-width:900px){
+#row2{
+right:30px;
+box-shadow:inset 0px 0px 40px #fff;
+border:5px solid  #fff;
+}				
+}
+
+
+#contact{
+height:100vh;			
+display:flex;
+flex-direction:column;
+align-items:center;
+color:#fff;
+justify-content:center;
+}
+
+#row3{
+display:flex;
+flex-direction:column;
+align-items:center;
+justify-content:center;
+width:75%;
+position: absolute;
+right:5px;
+border-radius:20px;
+box-shadow:inset 0px 0px 15px #fff;
+padding:20px 10px;
+border:2px solid  #fff;
+}
+#row3 input::placeholder{
+color:#000144;
+}
+#row3 textarea::placeholder{
+color:#000144;
+}
+
+#row3 #main{
+width:90%;
+padding:12px 12px;
+background:#fff;
+border:3px double #000144;
+outline:none;
+border-radius:5px;
+}
+
+#row3 #submit{
+width:60%;
+padding:12px 12px;
+background:#000144;
+border:3px double #fff;
+outline:none;
+border-radius:5px;
+color:#fff;
+}
+
+#row3 textarea{
+width:90%;
+padding:12px 12px;
+height:80px;
+background:#fff;
+border:3px double #000144;
+outline:none;
+resize:none;
+border-radius:5px;
+}
+@media(min-width:900px){
+#row2{
+right:30px;
+box-shadow:inset 0px 0px 40px #fff;
+border:5px solid  #fff;
+}				
+#row3 #main{
+width:60%;
+}
+#row3 textarea{
+width:60%;
+}
+#row3 #submit{
+width:30%;
+padding:12px 12px;
+background:#000144;
+border:3px double #000144;
+outline:none;
+border-radius:5px;
+color:#fff;
+}
+}
+</style>			
+
+
+<script>
+const x =document.getElementById("first");
+const y =document.getElementById("second");
+const z =document.getElementById("third");
+
+function two() {
+x.style.boxShadow	 ="inset 0px 0px 0px #51ff2b";
+y.style.boxShadow ="inset 0px 7px 13px #51ff2b";
+z.style.boxShadow	 ="inset 0px 0px 0px #51ff2b";
+}
+
+function third() {
+x.style.boxShadow	 ="inset 0px 0px 0px #51ff2b";
+y.style.boxShadow	 ="inset 0px 0px 0px #51ff2b";
+z.style.boxShadow ="inset 0px 7px 13px #51ff2b";
+}
+
+function one() {
+y.style.boxShadow	 ="inset 0px 0px 0px #51ff2b";
+x.style.boxShadow ="inset 0px 7px 13px #51ff2b";
+z.style.boxShadow	 ="inset 0px 0px 0px #51ff2b";
+}
+
+
+</script>	
+</body>
+</html>
